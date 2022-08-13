@@ -13,11 +13,27 @@ fun main(){
 		 */
 
     var num: Int = 0
+    var soma: Int = 0
+    var contNum: Int = 0
+    // var media: Float = 0.0F
 
-    while(num > 0) {
+    while(num >= 0) {
 
-        println("Digite um número: ")
+        println("Digite um número positivo (ou negativo para encerrar): ")
         val num = readLine()!!.toInt()
+
+        if(num >= 0){
+            contNum++
+            soma += num
+
+        }
+
+        if(num < 0){
+            println("${contNum} valores lidos.")
+            println("Média dos valores: ${soma / contNum}")
+            println("Soma total dos valores: ${soma}")
+            break
+        }
     }
 
 
