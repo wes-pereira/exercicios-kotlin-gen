@@ -33,16 +33,16 @@ fun main(){
 
         // (?) quando insere 50000 ou maior (testei a partir de 50000),
         // retorna um valor inesperado/errado (acredito que seja o valor limite da variável).
-        println("O valor do quadrado do terceiro número é ${Math.pow(num3, 2.0).toInt()}")
+        println("O valor do quadrado do terceiro número é ${Math.pow(num3, 2.0).toLong()}")
 
     }else{
 
-        // (?) quando insere 50000 ou maior (testei a partir de 50000), 
+        // (?) quando insere 50000 ou maior (testei a partir de 50000),
         // retorna um valor inesperado/errado (acredito que seja o valor limite da variável).
-        println("O valor do quadrado do primeiro número é ${Math.pow(num1, 2.0).toInt()}")
-        println("O valor do quadrado do segundo número é ${Math.pow(num2, 2.0).toInt()}")
-        println("O valor do quadrado do terceiro número é ${Math.pow(num3, 2.0).toInt()}")
-        println("O valor do quadrado do quarto número é ${Math.pow(num4, 2.0).toInt()}")
+        println("O valor do quadrado do primeiro número é ${Math.pow(num1, 2.0).toLong()}")
+        println("O valor do quadrado do segundo número é ${Math.pow(num2, 2.0).toLong()}")
+        println("O valor do quadrado do terceiro número é ${Math.pow(num3, 2.0).toLong()}")
+        println("O valor do quadrado do quarto número é ${Math.pow(num4, 2.0).toLong()}")
     }
 
 }
